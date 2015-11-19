@@ -1,0 +1,125 @@
+@import "normalize";
+
+// VARIABLES
+  // COLORS
+  $mainDarkColor: #0C5D11;
+  $mainMedColor: #5EAE63;
+  $mainLightColor: #D46D6A;
+  $subLightColor: #86C98A;
+  $almostWhiteColor: #CEE7D0;
+
+  // FONTS
+  $headerFont: 'Lobster Two', cursive;
+  $textFont: 'Quicksand', sans-serif;;
+
+// STYLES
+  // GENERAL
+.hidden {
+  display: none;
+}
+
+  // HEADER
+header {
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  font-family: $headerFont;
+  font-size: 3.5em;
+  color: $mainDarkColor;
+}
+
+// MAIN SECTION
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+  // NEW MOVIE FORM
+.newMovies {
+  text-align: center;
+}
+
+input {
+  margin-top: 3px;
+}
+
+button {
+  font-family: $textFont;
+  font-weight: bold;
+  font-size: .85em;
+  margin: 3px 3px 5px 0;
+  border: 1px solid grey;
+  border-radius: 5%;
+  transition: all 1s ease-in-out;
+  background-color: $mainMedColor;
+  &:hover {
+    background-color: $mainDarkColor;
+  }
+  &:active {
+    background-color: $mainDarkColor;
+  }
+}
+
+// MOVIE ITEMS (TEMPLATE)
+.movieSection {
+  width: 50%;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  img {
+    width: 60%;
+    }
+}
+
+.movieAside {
+  width: 40%;
+  margin: 0 auto;
+  display: inline-block;
+  button[name='edit'] {
+    margin-left: 40px;
+  }
+}
+
+.movieSection, .movieAside {
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+  li {
+    list-style-type: none;
+    margin-top: 10px;
+    font-family: $textFont;
+    font-size: 1.15em;
+    }
+}
+
+h3 {
+  font-family: $headerFont;
+  font-size: 2em;
+  color: $mainDarkColor;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-family: $textFont;
+  font-size: 1.5em;
+  color: $mainDarkColor;
+  margin: 0;
+  padding: 0;
+}
+
+.movie {
+  background-color: $almostWhiteColor;
+  margin: 10px auto;
+}
